@@ -1,0 +1,51 @@
+body {
+    text-align: center;
+}
+
+h1 {
+    text-align: left;
+}
+
+td {
+    padding: 10px;
+}
+
+
+.zagol {
+    background: black;
+    color: white;
+    border-collapse: collapse;
+}
+.gem {
+    height: 120px;
+}
+
+.images {
+    border-radius: 30px;
+    width: 120px;
+    height: 120px;
+}
+
+#soul {
+    background: orange;
+}
+
+#time {
+    background: green;
+}
+
+#space {
+    background: #006699;
+}
+
+#mind {
+    background: #ffff66;
+}
+
+#reality {
+    background: red;
+}
+
+#power {
+    background: purple;
+}

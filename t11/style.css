@@ -1,0 +1,29 @@
+div {
+    min-width: 2000px;
+}
+
+table {
+    margin-left: 20px;
+    text-align: center;
+    margin: 30px auto;
+    float: left;
+}
+
+th {
+    font-family: "Lato";
+    font-weight: 700;
+    font-size: 1.5em;
+    color: white;
+    background-color: #008ddf;
+    width: 120px;
+}
+
+.temperature {
+    font-family: "Lato";
+    font-weight: 400;
+    font-size: 2em;
+}
+
+table:hover {
+    box-shadow: 0 0 10px gray;
+}

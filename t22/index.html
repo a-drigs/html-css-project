@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+  <title>Title</title>
+</head>
+<body>
+    <h1>Settings</h1>
+    <form action="">
+        <div class="bigBox">
+            <div class="smallBox">
+            <div class="block typeface">
+                <h3 class="title">Typeface</h3>
+                <div class="checkedCheckbox">
+                    Acunim Pro <span class="checkedIcon">&#10004;</span>
+                    <div class="checkboxList">
+                        <div class="listItem">
+                            <input class="customCheckbox" id="checkbox1" type="checkbox">
+                            <label for="checkbox1"><span class="checkedListedIcon">&#10004;</span>Acunim Pro</label>
+                        </div>
+                        <div class="listItem">
+                            <input class="customCheckbox" id="checkbox2" type="checkbox">
+                            <label for="checkbox2"><span class="checkedListedIcon">&#10004;</span>Comic Sans</label>
+                        </div>
+                        <div class="listItem">
+                            <input class="customCheckbox" id="checkbox3" type="checkbox">
+                            <label for="checkbox3"><span class="checkedListedIcon">&#10004;</span>Times New Roman</label>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="block darkUI">
+
+                <div class="prettyCheckbox">
+                    <h3 class="title darkUITitle">Dark UI</h3>
+                    <input type="checkbox" id="darkUICheckbox" >
+                    <label class="darkUICheckbox" for="darkUICheckbox">
+                        <span class="checkedCircle"></span>
+                    </label>
+                </div>
+            </div>
+            <div class="block weight">
+                <h3 class="title">Weight</h3>
+                <div class="weightCheckboxes">
+                    <input type="radio" name="weight" id="regularWeight" value="1" checked>
+                    <label for="regularWeight">
+                        <div class="regularWeight"><span class="regularWeightChecked">&#10004;</span> </div>  Regular
+                    </label>
+                    <input type="radio" name="weight" id="boldWeight" value="2">
+                    <label for="boldWeight">
+                        <div class="boldWeight"><span class="boldWeightChecked">&#10004;</span> </div>  Bold
+                    </label>
+                </div>
+            </div>
+            <div class="block color">
+                <h3 class="title">Color</h3>
+                <div class="colorCheckboxes">
+                    <input type="checkbox" name="color" id="firstColor" value="1" >
+                    <label for="firstColor">
+                        <div class="firstColor"><span class="firstColorChecked">&#10004;</span> </div>
+                    </label>
+                    <input type="checkbox" name="color" id="secondColor" value="1" >
+                    <label for="secondColor">
+                        <div class="secondColor"><span class="secondColorChecked">&#10004;</span> </div>
+                    </label>
+                    <input type="checkbox" name="color" id="thirdColor" value="1" >
+                    <label for="thirdColor">
+                        <div class="thirdColor"><span class="thirdColorChecked">&#10004;</span> </div>
+                    </label>
+                    <input type="checkbox" name="color" id="fourthColor" value="1" >
+                    <label for="fourthColor">
+                        <div class="fourthColor"><span class="fourthColorChecked">&#10004;</span> </div>
+                    </label>
+                    <input type="checkbox" name="color" id="fifthColor" value="1" >
+                    <label for="fifthColor">
+                        <div class="fifthColor"><span class="fifthColorChecked">&#10004;</span> </div>
+                    </label>
+                </div>
+            </div>
+            <div class="block size">
+                <h3 class="title">Size</h3>
+                <div class="sizeSlider">
+                    <input type="range" name="slider" id="slider" min="0" max="11">
+                    <label for="slider"></label>
+                </div>
+                <div class="sliderText">
+                    <span class="left">A</span>
+                    <span class="right">A</span>
+                </div>
+            </div>
+
+        </div>
+            <div class="icons">
+                <div><img src="assets/images/artistic-brush.png" alt=""></div>
+                <div><img src="assets/images/user-icon.png" alt=""></div>
+                <div><img src="assets/images/sms-speech-bubble.png" alt=""></div>
+                <div><img src="assets/images/computer-screen.png" alt=""></div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

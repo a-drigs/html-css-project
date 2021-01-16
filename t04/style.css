@@ -1,0 +1,15 @@
+.japan {
+    outline: 2px solid gray;
+    width: 210px;
+    height: 130px;
+}
+
+.japan::before {
+    content: "";
+    border-radius: 50%;
+    border: 40px solid red;
+    background-color: red;
+    position: absolute;
+    margin-left: 65px;
+    margin-top: 25px;
+}

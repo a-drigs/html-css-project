@@ -1,0 +1,25 @@
+@media screen {
+    img {
+        float: left;
+    }
+
+    span {
+        float: left;
+        margin: 0px 20px;
+        width: calc(100% - 250px);
+    }
+
+p {
+    display: inline-block;
+}
+}
+
+@media print {
+     span {
+        width: 100%;
+    }
+
+    p {
+        width: 100%;
+    }
+}

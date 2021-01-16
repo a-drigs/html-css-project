@@ -1,0 +1,87 @@
+.container{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.customCheckbox{
+    visibility: hidden;
+}
+.firstHeader{
+    color: darksalmon;
+    text-align: left;
+}
+.secondHeader{
+    color: darkgray;
+    font-weight: bold;
+    text-align: center;
+}
+.checkboxLabel{
+    border-radius: 40px;
+    border: 1px solid darkslategray;
+    display: table-cell;
+    height: 60px;
+    text-align: center;
+    min-width: 250px;
+    color: darkgray;
+    vertical-align: middle;
+}
+form{
+    width: 100%;
+}
+.row{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+.row > div{
+    display: inline-block;
+    padding: 10px;
+}
+input:checked ~ label{
+    background: darkslategray;
+    color: white;
+}
+input:checked ~ label > i{
+    visibility: visible;
+    color: white;
+}
+i{
+    visibility: hidden;
+}
+
+.jobDetails {
+    border: none;
+    border-bottom: 1px solid darkgrey;
+    margin-top: 100px;
+    width: 100%;
+}
+.name, .email  {
+    border: none;
+    border-bottom: 1px solid darkgrey;
+    margin-top: 50px;
+    width: 48%;
+}
+.name{
+    float: left;
+}
+.email{
+    float: right;
+}
+
+.name, .email, .jobDetails:focus {
+    outline: none;
+}
+
+.btnSend{
+    background: darksalmon;
+    color: white;
+    font-weight: bold;
+    width: 100%;
+    margin-top: 50px;
+    height: 45px;
+    border: none;
+}
+.btnSend:hover{
+    background: darkslategray;
+    transition: all 2s ease;
+}
+
+

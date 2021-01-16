@@ -1,0 +1,17 @@
+.h1 {
+    display: flex;
+    justify-content: center;
+}
+
+.search {
+    display: flex;
+    flex-direction: row;
+}
+
+input {
+    width: 100%;
+}
+button {
+    padding-left: 0;
+    padding-right: 0;
+}

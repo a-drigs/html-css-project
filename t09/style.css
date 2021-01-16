@@ -1,0 +1,18 @@
+form {
+    border: 2px solid grey;
+    padding: 20px;
+    font-size: 20px;
+}
+
+input {
+    margin: 5px;
+}
+
+fieldset {
+    padding: 12px;
+    margin: 14px 10px 20px 10px;
+}
+
+textarea {
+    font-size: 11px;
+}

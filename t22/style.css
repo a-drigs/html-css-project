@@ -1,0 +1,292 @@
+h1{
+    text-align: center;
+}
+
+.bigBox{
+    width: 830px;
+    min-height: 600px;
+    background-color: black;
+    color: floralwhite;
+    padding: 30px 0 30px 20px;
+
+}
+.smallBox{
+    width: 700px;
+    height: 600px;
+    background-color: slategrey;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+}
+
+.icons{
+    position: absolute;
+    top: 250px;
+    left: 728px;
+    background-color: #003245;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.icons > div{
+    padding: 10px 10px 20px 20px;
+
+}
+
+img{
+    width: 50px;
+}
+
+
+
+/* Typeface style */
+
+.typeface{
+    width: calc(100% - 100px);
+    padding: 50px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+.checkedIcon{
+    float: right;
+}
+.checkedCheckbox{
+    border: 2px solid #00CED1;
+    padding: 5px;
+    color: lightslategrey;
+    background-color: #003245;
+    height: 20px;
+    position: absolute;
+    width: 170px;
+
+}
+.customCheckbox{
+    visibility: hidden;
+}
+.checkboxList{
+    background-color: #003245;
+    color: lightslategrey;
+    position: relative;
+    width: 185px;
+    top: -20px;
+    left: -15px;
+    border: 1px solid lightgray;
+    visibility: hidden;
+}
+.checkedListedIcon{
+    visibility: hidden;
+}
+.checkedCheckbox:hover .checkboxList{
+    visibility: visible;
+    color: white;
+}
+.listItem:hover{
+    background-color: #00CED1;
+}
+.listItem:hover .checkedListedIcon{
+    visibility: visible;
+ }
+
+/* Dark UI style */
+
+.darkUI{
+    width: 100%;
+    padding: 95px 0 50px 0;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    position: relative;
+}
+
+.darkUICheckbox{
+
+    width: 70px;
+    height: 30px;
+    background-color: #003245;
+    border-radius: 20px;
+    display: inline-block;
+    position: absolute;
+    bottom: 95px;
+    left: 250px;
+    padding: 3px 2px 5px 2px;
+
+}
+.checkedCircle{
+    display: table-cell;
+    vertical-align: center;
+    background-color: #00CED1;
+    border-radius: 30px;
+    width: 30px;
+    height: 30px;
+
+}
+#darkUICheckbox{
+    visibility: hidden;
+}
+
+.darkUITitle {
+    display: inline-block;
+}
+
+#darkUICheckbox:checked ~ label > .checkedCircle{
+    float: right;
+}
+
+#darkUICheckbox:checked ~ label{
+    background-color: dodgerblue;
+}
+
+/* Weight */
+
+.weight{
+    width: calc(100% - 100px);
+    padding: 0 50px 50px 50px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+.regularWeight, .boldWeight{
+    display: table-cell;
+    width: 20px;
+    height: 20px;
+    background-color: #003245;
+    border: 1px solid white;
+    border-radius: 5px;
+    color: #00CED1;
+    text-align: center;
+    vertical-align: center;
+
+}
+.weightCheckboxes > label{
+    padding: 20px 20px 0 0;
+}
+.regularWeightChecked{
+    visibility: hidden;
+}
+#regularWeight:checked ~ label > .regularWeight > .regularWeightChecked{
+    visibility: visible;
+}
+.boldWeightChecked{
+    visibility: hidden;
+}
+#boldWeight:checked ~ label > .boldWeight > .boldWeightChecked{
+    visibility: visible;
+}
+
+#regularWeight, #boldWeight{
+    display: none;
+}
+
+/* Color */
+
+.color{
+    width: 100%;
+    padding: 0 0 50px 0;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.colorCheckboxes > input{
+    display: none;
+
+}
+
+#firstColor:checked ~ label > div > .firstColorChecked{
+    visibility: visible;
+    color: ghostwhite;
+}
+#secondColor:checked ~ label > div > .secondColorChecked{
+    visibility: visible;
+    color: ghostwhite;
+}
+#thirdColor:checked ~ label > div > .thirdColorChecked{
+    visibility: visible;
+    color: ghostwhite;
+}
+#fourthColor:checked ~ label > div > .fourthColorChecked{
+    visibility: visible;
+    color: ghostwhite;
+}
+#fifthColor:checked ~ label > div > .fifthColorChecked{
+    visibility: visible;
+    color: ghostwhite;
+}
+
+.colorCheckboxes > label{
+    padding-right: 20px;
+}
+
+.colorCheckboxes > label > div{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+
+}
+.firstColorChecked, .secondColorChecked, .thirdColorChecked, .fourthColorChecked, .fifthColorChecked{
+    visibility: hidden;
+}
+.firstColor, .secondColor, .thirdColor, .fourthColor, .fifthColor{
+    display: table-cell;
+    text-align: center;
+    vertical-align: center;
+}
+
+.firstColor{
+    background-color: royalblue;
+}
+.secondColor{
+    background-color: mediumaquamarine;
+}
+.thirdColor{
+    background-color: deeppink;
+}
+.fourthColor{
+    background-color: goldenrod;
+}
+.fifthColor{
+    background-color: coral;
+}
+
+/* Size */
+
+.size{
+    width: calc(100% - 100px);
+    padding: 0 50px 50px 50px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+#slider{
+    -webkit-appearance: none; /* Hides the slider so that custom slider can be made */
+    width: calc(100% - 70px); /* Specific width is required for Firefox. */
+    background: transparent; /* Otherwise white in Chrome */
+
+}
+#slider:focus {
+    outline: none; /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */
+}
+input[type=range]::-webkit-slider-runnable-track {
+    height: 3px;
+    background-color: #003245;
+}
+input[type=range]::-webkit-slider-thumb {
+    margin-top: -12px;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #00CED1;
+    border: 1px solid darkslategray;
+    cursor: pointer;
+    -webkit-appearance: none;
+}
+
+.left{
+    float: left;
+}
+
+.right{
+    float: right;
+    font-size: 2em;
+}
+.sliderText{
+    margin-top: 20px;
+    width: calc(100% - 60px);
+}

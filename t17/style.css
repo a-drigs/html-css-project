@@ -1,0 +1,72 @@
+* {
+    transition: all .2s;
+}
+.container{
+    width: 920px;
+    margin: 50px auto;
+    text-align: justify;
+}
+h2{
+    text-align: center;
+}
+.protocolSubtopic{
+    width: 920px;
+}
+.subtopic{
+    border: 1px solid lightseagreen;
+    display: inline-block;
+    width: 280px;
+    min-height: 200px;
+    vertical-align: top;
+    padding: 10px;
+    margin: 20px auto;
+
+
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px){
+    .container, .protocolSubtopic{
+        width: 700px;
+    }
+    .subtopic{
+        width: 300px;
+        margin: 20px 5px;
+    }
+    .subtopic:nth-child(even){
+        float: left;
+    }
+    .subtopic:nth-child(odd){
+        float: right;
+    }
+
+}
+
+@media screen and (min-width: 321px) and (max-width: 768px){
+    .container, .protocolSubtopic{
+        width: 100%;
+
+    }
+    .subtopic{
+        width: 80%;
+        text-align: justify;
+    }
+    .htmlBlock, .cssBlock{
+        text-align: center;
+    }
+    
+}
+
+@media screen and (max-width: 320px){
+    .container, .protocolSubtopic{
+        width: 100%;
+    }
+    .subtopic{
+        width: 90%;
+        text-align: justify;
+    }
+    .htmlBlock, .cssBlock{
+        text-align: center;
+    }
+}
+
+

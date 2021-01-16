@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang= "en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Superhero form</title>
+        <link rel= "stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>Superhero form</h1>
+        <form>
+            <fieldset>
+                <legend>About the Superhero</legend>
+                <label for="Name">Real Name </label><input type="text" placeholder="Superhero real name" autofocus>
+                <label for="Name">Superhero Name </label><input type="text" placeholder="Superhero alias">
+                <label for="Name">Age </label><input type="number" min="1" max="999" step="1">
+                <p><label for="Name">About </label><textarea cols="70" rows="5" maxlength="500" placeholder="Information about the superhero, max 500 symbols"></textarea></p>
+                <label for="Name">Photo: </label><input type="file" accept="image/*">
+            </fieldset>
+            <fieldset>
+                <legend>Powers</legend>
+                <input name="powers" type="checkbox"><span>Telekinesis</span>
+                <input name="powers" type="checkbox"><span>Super strength or speed</span>
+                <input name="powers" type="checkbox"><span>Shapeshifting</span>
+                <input name="powers" type="checkbox"><span>Flight</span>
+                <input name="powers" type="checkbox"><span>Elemental control</span>
+                <input name="powers" type="checkbox"><span>Other</span>
+                </br>
+                <label for="Name">Level of control:</label><input type="range" min="1" max="10" step="1">
+            </fieldset>
+            <fieldset>
+                <legend>Origin of Powers</legend>
+                <input name="origins" type="radio"><span>Unknown</span>
+                <input name="origins" type="radio"><span>Freak lab accident</span>
+                <input name="origins" type="radio"><span>Chosen by an ancient wise being</span>
+                <input name="origins" type="radio"><span>The superhero is not human</span>
+                <input name="origins" type="radio"><span>Other</span>
+            </fieldset>
+            <input type="reset" value="CLEAR">
+            <input type="submit" value="SEND">
+        </form>
+    </body>
+    </html>

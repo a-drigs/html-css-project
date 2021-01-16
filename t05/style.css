@@ -1,0 +1,58 @@
+img {
+    height: 182px;
+    float:left;
+    position: relative;
+    bottom: 22px;
+    left: 15px;
+}
+
+.card {
+    width: 270px;
+    height: 160px;
+    border-radius: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 25px 20px;
+    float:left;
+}
+
+.firstName {
+    font-size: 12px;
+    color: white;
+    padding-right: 10px;
+    float: right;
+
+}
+
+.secondName {
+    font-size: 9px;
+    color: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    padding-top: 20px;
+    width: 260px;
+    text-align: right;
+}
+
+#cap {
+    background: linear-gradient(180deg, #4568DC, #B06AB3);
+}
+
+#iron {
+    background: linear-gradient(180deg, #e52d27, #b31217);   
+}
+
+#widow {
+    background: linear-gradient(90deg, #000, #61045F); 
+}
+
+#spider {
+    background: linear-gradient(180deg, #e52d27, #000); 
+}
+
+#img_spider {
+    height: 182px;
+    padding-left: 15px;
+    float: left;
+    position: relative;
+    bottom: 0px;
+    left: 0px;
+}
