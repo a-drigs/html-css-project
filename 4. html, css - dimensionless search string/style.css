@@ -17,10 +17,10 @@ form button {
     float: left;
 }
 
-form button:hover {
+form input:hover {
     color: red;
 }
 
-form input:hover {
+form button:hover {
     color: red;
 }
